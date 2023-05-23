@@ -107,6 +107,7 @@ a:hover {
   border: 3px solid #4fefe8;
   margin: 0;
   padding: 0;
+  opacity: 0.8;
 }
 
 .flex-one {
@@ -125,7 +126,9 @@ a:hover {
 /* FOOTER */
 
 .footer-container {
-    
+    height: 100vh;
+    background: rgb(62,189,182);
+background: linear-gradient(180deg, rgba(62,189,182,1) 0%, rgba(37,112,108,1) 97%);
 }
 
 /* GRID POSITIONING */
@@ -168,6 +171,34 @@ a:hover {
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding-left: 5rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template: repeat(3, 4rem)/ min-content 1rem min-content;
+    justify-content: space-between;
+    width: 41%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer-item {
+    grid-column: 3 / 4;
+}
+
+.footer-content > p {
+    font-size: 2.5rem;
+}
+
 
 /* MOBILE SIZING */
 
